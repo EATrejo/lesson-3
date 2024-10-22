@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Cursos
+{% endblock  %}
+
+{% block content %}
+<section>
+    <h1>Talleres y Cursos</h1>
+    {% for curso in cursos  %}
+    <article class="post">
+        <h2>
+            <a href="{% url 'cursos:page' slug=curso.slug %}">
+            {{ curso.title }}
+        </a>
+        </h2>
+        <p> Taller: {{ curso.description }} </p>
+        {{ curso.title }}
+        <p>Duración del curso: {{ curso.duracion_curso}} </p>
+        <p>Lugar: {{ curso.lugar_curso}} </p>
+        <p>Fecha de inicio: {{ curso.fecha_de_inicio}} </p>
+        <p>Costo del curso o taller: {{ curso.costo_del_curso}} </p><br>
+        <p></p>
+    </article>
+    
+    {% endfor %}
+</section>
+{% endblock  %}

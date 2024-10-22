@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<h2>
+    {{ curso.title }}
+</h2>
+{% endblock  %}
+
+{% block content %}
+<section>
+    <h1> {{ curso.title }} </h1>
+        <img class="banner" 
+        src="{{ curso.banner.url }}" 
+        alt="{{ curso.title }}">
+        <p>Taller: {{ curso.description }} </p>
+        <p>Duración del curso: {{ curso.duracion_curso}} </p>
+        <p>Lugar: {{ curso.lugar_curso}} </p>
+        <p>Fecha de inicio: {{ curso.fecha_de_inicio}} </p>
+        <p>Costo del curso o taller: {{ curso.costo_del_curso}} </p><br>
+        <p></p>
+    
+
+</section>
+{% endblock  %}
