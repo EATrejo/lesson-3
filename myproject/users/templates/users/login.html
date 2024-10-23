@@ -14,12 +14,10 @@ Login Page
     {% else %}
     <h1>Login</h1>
     <br>
-    <form method="POST" action="{% url 'cursos:list'%}">
+    <form method="POST" action="{% url 'users:login' %}">
         {% csrf_token %}
-
-          <form>
             <div class="mb-3">
-              <input type="text" class="form-control" name="Username", placeholder="Username" required>
+              <input type="text" class="form-control" name="username", placeholder="Username" required>
                 <br>
             </div>
             <div class="mb-3">
@@ -27,7 +25,6 @@ Login Page
             </div>
             <br>
             <button type="submit" class="btn btn-primary col-md-12">Login</button>
-          </form>
     </form>
 
    </div>
