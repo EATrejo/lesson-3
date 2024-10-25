@@ -58,6 +58,52 @@ a:hover {
     font-size: 18px;
 }
 
+.logo{
+    font-size: 36px;
+    font-weight: 600;
+    font-style: italic;
+    color: blueviolet;
+    margin-bottom: 60px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 4rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.literatus{
+    font-size: 2.5rem;
+    margin-top: 6rem;
+    margin-left: -1.5rem;
+    color: #ac1383;
+    font-style: italic;
+}
+
+.titulo{
+    font-size: 18px;
+}
+
+.parrafo-club{
+    font-family: 'Times New Roman', Times, serif;
+    text-align:justify;
+    font-style: italic;
+    font-size: 24px;
+
+}
+
+.linky{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-decoration: none;
+}
+.par-1{
+    font-size: 30px;
+}
+
 .quienes{
     padding: 80px 0;
 }
@@ -65,11 +111,41 @@ a:hover {
 .card img{
     width: 275px;
     height: 275px;
+    
 }
 
-/**@media(max-width: 767px) {
-   .quienes{
-    padding: 30 0 0 0;
-   } 
-}*//
 
+@media screen and (max-width: 1280px) {
+
+    .rockote{
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 0;
+        padding-left: 0;
+        gap: 60px;
+    }
+
+    .rock{
+
+    }
+
+    .rockito{
+        width: 320px;
+    }
+
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .container{
+        align-items: center;
+    }
+
+    .rock{
+        margin-right: 80px;
+
+    }
+
+
+}
