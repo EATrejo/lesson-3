@@ -6,23 +6,39 @@
 
 {% block content %}
 <section>
-    <h1>Talleres y Cursos</h1>
-    {% for curso in cursos  %}
-    <article class="post">
-        <h2>
-            <a href="{% url 'cursos:page' slug=curso.slug %}">
-            {{ curso.title }}
-        </a>
-        </h2>
-        <p> Taller: {{ curso.description }} </p>
-        {{ curso.title }}
-        <p>Duración del curso: {{ curso.duracion_curso}} </p>
-        <p>Lugar: {{ curso.lugar_curso}} </p>
-        <p>Fecha de inicio: {{ curso.fecha_de_inicio}} </p>
-        <p>Costo del curso o taller: {{ curso.costo_del_curso}} </p><br>
-        <p></p>
-    </article>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="titulo-club text-white">Talleres y Cursos</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="section-header pb-5 ">
+                    {% for curso in cursos  %}
+                    <article class="post">
+                     <h2 class="titulo-taller">
+                     <a href="{% url 'cursos:page' slug=curso.slug %}">
+                     {{ curso.title }}
+                    </a>
+                    </h2>
+                    <p class="text-white parrafo-descripcion"><span class="campo">Taller:</span> {{ curso.description }} </p>
+                <p class="text-white"><span class="campo" >Duración del curso:</span>  {{ curso.duracion_curso}} </p>
+                <p class="text-white"><span class="campo" >Lugar:</span>  {{ curso.lugar_curso}} </p>
+                <p class="text-white"><span class="campo" >Fecha de inicio:</span>  {{ curso.fecha_de_inicio}} </p>
+                <p class="text-white"><span class="campo" >Costo del curso o taller:</span>  {{ curso.costo_del_curso}} </p><br>
+                <p></p>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
     
-    {% endfor %}
+    
+        
+    
+    
 </section>
 {% endblock  %}

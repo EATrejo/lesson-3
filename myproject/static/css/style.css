@@ -95,13 +95,17 @@ h1 {
 
 }
 
+.titulo-club{
+    font-size: 4.5rem;
+}
+
 .linky{
     font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     text-decoration: none;
 }
 .par-1{
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 
 .quienes{
@@ -112,6 +116,70 @@ h1 {
     width: 275px;
     height: 275px;
     
+}
+
+.literatus-link{
+    font-size: 28px;
+    color: #ac1383;
+}
+.contendor-proximas{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.proximas-tertulias{
+    font-size: 3rem;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 45px;
+    padding-bottom: 45px;
+}
+.tertulia{
+    margin-bottom: 10px;
+    padding-bottom: 19px;
+    line-height: 2.5rem;
+}
+
+.campo{
+    color: blue;
+}
+
+.parrafo-descripcion{
+    text-align: justify;
+}
+
+.container-cuadrototote{
+
+    place-content: center;
+}
+
+.container-login{
+    
+    align-content: center;
+}
+
+.cuadrote-login{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    place-content: center;
+
+}
+
+.forma-login{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    place-self: center;
+}
+
+.titulo-registro{
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.titulo-taller{
+    font-size: 3rem;
 }
 
 
@@ -125,15 +193,55 @@ h1 {
         gap: 60px;
     }
 
-    .rock{
-
-    }
-
+    
+    
     .rockito{
         width: 320px;
     }
 
+    
+    .campo{
+        color: blue;
+        text-align: justify;
+    }
+    
+    .parrafo-descripcion{
+        text-align: justify;
+    }
 
+    .container-cuadrototote{
+
+        place-content: center;
+    }
+    
+    .container-login{
+        
+        align-content: center;
+    }
+    
+    .cuadro-login{
+        align-self: center;
+    }
+    
+    .cuadrote-login{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+
+    }
+
+    .forma-login{
+        width: 100%;
+        justify-self: center;
+        align-self: center;
+        place-self: center;
+    }
+
+    .titulo-taller{
+        font-size: 3rem;
+    }
+  
 }
 
 @media screen and (max-width: 375px) {
@@ -143,9 +251,93 @@ h1 {
     }
 
     .rock{
-        margin-right: 80px;
+        margin-right: 77px;
 
     }
 
+    .titulo-club{
+        font-size: 2rem;
+        top: 2rem;
+    }
 
+    
+    .container-club{
+
+        justify-content: center;
+    }
+
+    
+    .proximas-tertulias{
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .linky{
+        font-size: 2rem;
+
+    }
+
+    .parrafo-club{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .sutitulo{
+        font-size: 2rem;
+    }
+    
+    
+    .literatus{
+        z-index: 2;
+        font-size: 1.5rem;
+        padding-left:14px;
+    }
+
+    
+    .contendor-proximas{
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .proximas-tertulias{
+        margin-top: 0;
+        padding-top: 0;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+    .tertulia{
+        margin-bottom: 10px;
+        padding-bottom: 19px;
+        line-height: 27px;
+    }
+
+    .campo{
+        color: rgb(98, 141, 252);
+        justify-content: center;
+        
+    }
+
+    .parrafo-descripcion{
+        text-align: justify;
+    }
+
+    .boton-login{
+        width: 16.6rem;
+    }
+
+    .cuadro-login{
+
+        margin-bottom: 5rem;
+    }
+
+    .input-login{
+        margin-top: 0;
+    }
+
+    .titulo-taller{
+        font-size: 2rem;
+    }
+
+    
 }
+

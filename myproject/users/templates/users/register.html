@@ -3,10 +3,11 @@
 
 
 <div class="col-md-6 offset-md-3">
-<h1>Register</h1>
+<h1 class="titulo-registo text-white">Registrate</h1>
+<h3 class="subtitulo-registro text-white">Conviertete en un miembro de <span class="logo">Literatrus</span></h3>
 <br/>
 
-<form method="POST" action="">
+<form method="POST" action="" >
 	{% csrf_token %}
     {% if form.errors %}
 			<div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -20,7 +21,7 @@
 			</div>
 		{% endif %}
 	{{ form.as_p }}
-	  <button type="submit" class="btn btn-secondary">Register</button>
+	  <button type="submit" class="btn btn-secondary col-md-12">Register</button><br><br><br>
 	</form>
 
 

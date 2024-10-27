@@ -7,28 +7,46 @@ Login Page
 {% endblock  %}
 
 {% block content %}
-   <div class="col-md-3 offset-md-3">
+<section class="quienes">
+  <div class="container-cuadrototote">
+
+      
+
+   
     {% if user.is_authenticated %}
     <h1>Hello World</h1>
 
     {% else %}
-    <h1>Login</h1>
-    <br>
-    <form method="POST" action="{% url 'users:login' %}">
-        {% csrf_token %}
-            <div class="mb-3">
-              <input type="text" class="form-control" name="username", placeholder="Username" required>
-                <br>
+    <div class="container-login">
+      <div class="row">
+        <div class="col-md-12">
+            <div class="section-header text-center pb-5"><br><br>
+                <h2 class="text-white titulo-club">Bienvenido literatus</h2><br><br>
+                <h2 class="text-white login-text">Login</h2>
             </div>
-            <div class="mb-3">
-              <input type="password" class="form-control" name="password", placeholder="Password" required>
-            </div>
-            <br>
-            <button type="submit" class="btn btn-primary col-md-12">Login</button>
-    </form>
+        </div>
+      </div>
 
-   </div>
-        
+          <div class="col-md-12 cuadro-login">
+            <div class="cuadrote-login"><br><br>
+              <div class="col-md-3 offset-md-3 forma-login">
+                <form method="POST"  action="{% url 'users:login' %}">
+                  {% csrf_token %}
+                      <div class="mb-3">
+                        <input type="text" class="form-control" name="username", placeholder="Username" required>
+                          <br>
+                      </div>
+                      <div class="mb-3">
+                        <input type="password" class="form-control" name="password", placeholder="Password" required>
+                      </div>
+                      <br>
+                      <button type="submit" class="btn btn-primary col-md-12 boton-login">Login</button>
+                </form>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>    
     
 {% endif %}
 
