@@ -40,6 +40,9 @@ Login Page
                         <input type="password" class="form-control" name="password", placeholder="Password" required>
                       </div>
                       <br>
+                      {% if request.GET.next %}
+                        <input type="hidden" name="next" value="{{ request.GET.next }}" />
+                      {% endif %}
                       <button type="submit" class="btn btn-primary col-md-12 boton-login">Login</button>
                 </form>
               </div>

@@ -6,12 +6,18 @@
 
 {% block content %}
     <section>
-        <h1>Inscripciones</h1>
-      
-        <form class="form-with-validation" action="{% url 'inscripciones:nueva-inscripcion' %} " method = "post">
-            {% csrf_token %}
-            {{ form }}
-            <button class="form-submit" > <a href="/inscripciones/nueva-inscripcion">Suscribete</a></button>
-        </form> 
+        <div class="row">
+            <div class="col-md-12 text-white">
+                <h1>Inscripciones</h1>
+            
+                <form class="form-with-validation" action="{% url 'inscripciones:nueva-inscripcion' %} " method = "post">
+                    {% csrf_token %}
+                    <article class="text-white">
+                        {{ form }}
+                    </article>
+                    <button class="form-submit">Suscribete</a></button>
+                </form>
+            </div>
+        </div> 
     </section>
 {% endblock  %}

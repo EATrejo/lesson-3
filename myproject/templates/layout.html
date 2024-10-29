@@ -19,6 +19,7 @@
     
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
+
             <div class="container">
                 <a href="#" class="navbar-brand"><span class="logo">Literatus</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -26,6 +27,7 @@
                         aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                
 
                 <div class="collapse navbar-collapse" id="navbar-start">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -59,24 +61,25 @@
                 </div>
             </div>
         </nav>
-
-        <div class="col-md-3 offset-md-3">
-        {% if messages  %}
-            {% for message in  messages%}
-                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        {{ message }}
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-        
-            {% endfor %}
-        
-        {% endif %}
-        </div>
         <div class="container">
+            <div class="col-md-3 offset-md-3 mensaje-alerta">
+                {% if messages  %}
+                    {% for message in  messages%}
+                        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                {{ message }}
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                
+                    {% endfor %}
+                
+                {% endif %}
+            </div>   
         
         
         <main class="bg-dark p-3">
+           
             {% block content %}
+            
             
             {% endblock %}
         </main>

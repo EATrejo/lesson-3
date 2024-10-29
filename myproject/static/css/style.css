@@ -52,6 +52,17 @@ a:hover {
     max-width: 300px;
 }
     **/
+.navbar{
+    margin-top: -10px;
+    margin-left: -7px;
+    margin-right: -7px;
+    position: relative;
+}
+
+.mensaje-alerta{
+    position: absolute;
+    z-index: 888;
+}
 
 
 .navbar a{
@@ -261,6 +272,18 @@ h1 {
 
 @media screen and (max-width: 1280px) {
 
+    .navbar{
+        margin-top: -10px;
+        margin-left: -7px;
+        margin-right: -7px;
+        position: relative;
+    }
+    
+    .mensaje-alerta{
+        position: absolute;
+        z-index: 888;
+    }
+
     .rockote{
         display: flex;
         justify-content: space-evenly;
@@ -396,6 +419,19 @@ h1 {
 }
 
 @media screen and (max-width: 375px) {
+
+    .navbar{
+        margin-top: -10px;
+        margin-left: -8px;
+        margin-right: -8px;
+        position: relative;
+    }
+    
+    .mensaje-alerta{
+        width: 70%;
+        position: absolute;
+        z-index: 888;
+    }
 
     .container{
         align-items: center;
