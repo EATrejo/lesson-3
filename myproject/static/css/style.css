@@ -53,6 +53,7 @@ a:hover {
 }
     **/
 
+
 .navbar a{
     font-weight: 600;
     font-size: 18px;
@@ -109,7 +110,12 @@ h1 {
 }
 
 .quienes{
+    margin-top: 3rem;
     padding: 80px 0;
+}
+
+.margen-superior{
+    margin-top: 4rem;
 }
 
 .card img{
@@ -182,6 +188,76 @@ h1 {
     font-size: 3rem;
 }
 
+.subtitulo-registro{
+    font-size: 2rem;
+}
+
+.titulo-club-2{
+    font-size: 4.5rem;
+}
+
+.container-main-page{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-page{
+    display: grid;
+    place-content: center;
+}
+
+.container-image{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: red;
+}
+
+.banner {
+    width: 450px;
+    height: auto;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.parrafo-catedratico{
+    text-align: justify;
+}
+
+.curso-title{
+    font-size: 3rem;
+}
+
+.parrafo-page{
+    font-size: 24px;
+    margin-top: 2rem;
+}
+
+.boton-container{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.boton-falso{
+    background-color: blue;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 125px;
+    cursor: pointer;
+    justify-self: center;
+}
+
+.boton_inscribirse-lectura{
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 125px;
+    cursor: pointer;
+
+}
+
 
 @media screen and (max-width: 1280px) {
 
@@ -240,6 +316,81 @@ h1 {
 
     .titulo-taller{
         font-size: 3rem;
+    }
+
+    .subtitulo-registro{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .titulo-club-2{
+        font-size: 4rem;
+    }
+
+    .parrafo-catedratico{
+        text-align: justify;
+    }
+
+    .container-main-page{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container-page{
+        display: grid;
+        place-content: center;
+    }
+    
+    .container-image{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: red;
+    }
+    
+    .banner {
+        width: 450px;
+        height: auto;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .parrafo-catedratico{
+        text-align: justify;
+    }
+    
+    .curso-title{
+        font-size: 3rem;
+    }
+    
+    .parrafo-page{
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+    
+    .boton-container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .boton-falso{
+        background-color: blue;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 125px;
+        cursor: pointer;
+        justify-self: center;
+    }
+    
+    .boton_inscribirse-lectura{
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 125px;
+        cursor: pointer;
+    
     }
   
 }
@@ -336,6 +487,98 @@ h1 {
 
     .titulo-taller{
         font-size: 2rem;
+    }
+
+    .titulo-club{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .titulo-club-2{
+        font-size: 2.5rem;
+    }
+
+    .margen-superior{
+        margin-top: 1rem;
+    }
+
+    .titulo-registro{
+        font-size: 3rem;
+    }
+
+    .subtitulo-registro{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .boton-registro{
+        width: 18rem;
+    }
+
+    .parrafo-catedratico{
+        text-align: justify;
+    }
+
+    .container-main-page{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .container-page{
+        display: grid;
+        place-content: center;
+    }
+    
+    .container-image{
+        margin-left: auto;
+        margin-right: auto;
+        background-color: red;
+    }
+    
+    .banner {
+        width: 250px;
+        height: auto;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    
+    .parrafo-catedratico{
+        text-align: justify;
+    }
+    
+    .curso-title{
+        font-size: 3rem;
+    }
+    
+    .parrafo-page{
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+    
+    .boton-container{
+        display: block;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .boton-falso{
+        background-color: blue;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 125px;
+        cursor: pointer;
+        justify-self: center;
+    }
+    
+    .boton_inscribirse-lectura{
+        text-decoration: none;
+        color: #fff;
+        padding: 0.5rem;
+        border-radius: 10px;
+        width: 125px;
+        cursor: pointer;
+    
     }
 
     

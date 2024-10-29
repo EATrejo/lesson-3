@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+ Inscripciones
+{% endblock  %}
+
+{% block content %}
+    <section>
+        <h1>Inscripciones</h1>
+      
+        <form class="form-with-validation" action="{% url 'inscripciones:nueva-inscripcion' %} " method = "post">
+            {% csrf_token %}
+            {{ form }}
+            <button class="form-submit" > <a href="/inscripciones/nueva-inscripcion">Suscribete</a></button>
+        </form> 
+    </section>
+{% endblock  %}
