@@ -1,5 +1,6 @@
-from django.shortcuts import render, HttpResponse
+from django.shortcuts import render, redirect
 from django.contrib.auth.decorators import login_required
+from django.contrib import messages
 from . import forms
 
 # Create your views here.
@@ -9,7 +10,8 @@ def nueva_inscripcion(request):
          form = forms.CreateInscripcion(request.POST)
          if form.is_valid():
               form.save()
-              return HttpResponse("<h1>Tu subscripcion se procesó correctamente.</h1>")
+              messages.success(request, "Tu subscripcion se procesó correctamente")
+              return redirect("home")
     else:
         form = forms.CreateInscripcion()
     return render(request, 'inscripciones/nueva_inscripcion.html', {'form': form})
